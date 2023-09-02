@@ -37,7 +37,7 @@ cmake_minimum_required(VERSION 3.14)
 
 if (NOT TARGET osal)
   # Attempt to find externally built OSAL
-  find_package(Osal QUIET)
+  find_package(Osal)
 
   if (NOT Osal_FOUND)
     # Download and build OSAL locally as a static library
